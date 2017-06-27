@@ -97,9 +97,9 @@ y_score = tf.nn.sigmoid(y)
 
 y_binary = tf.greater(y_score, th)
 
-y_out = np.zeros((19600, 100), dtype=np.float)
+y_out = np.zeros((no_samples, len_seq), dtype=np.float)
 
-for j in range(196):  # 16
+for j in range(no_samples/batch_size):
     randIndx_test = np.arange(j*batch_size, (j+1)*batch_size)
     test_xs = test_input[randIndx_test, :]
     test_ys = test_label[randIndx_test, :]
