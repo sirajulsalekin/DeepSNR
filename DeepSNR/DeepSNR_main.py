@@ -12,7 +12,7 @@ np.set_printoptions(threshold=np.nan, precision=3, suppress=True)
 tmp = DeepSNRFunctions()
 layers = DeepSNRlayers()
 
-lines = tuple(open("CTCF_testSeq.txt", "r"))
+lines = tuple(open("CTCF_testSeq.txt", "r"))  # provide input sequences as txt file
 mat_contents = sio.loadmat('labels.mat')
 labels = mat_contents['labels']
 
