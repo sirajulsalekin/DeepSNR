@@ -1,3 +1,5 @@
 b_fc2_2 = -0.10759738
 
 b_fc2_d_2 = 0.030973475
+
+threshold_for_binary_output = 0.514
