@@ -1,0 +1,35 @@
+## DeepSNR architecture for CTCF
+
+# Convolutional network
+
+Convolutional layer: Number of kernels = 16, kernel size = ( 36 x 4 ), padding = 'VALID'
+
+Max-pooling layer: Global max-pooling, i.e. only 1 maximum value is stored for the output of each convlutional kernel ( See DeepBind for details )
+
+Fully connected layer: Number of neurons = 16 ( at input ) and 1 ( at output), weight dimension = ( 16 x 1 )
+
+# Deconvolutional network
+
+Fully connected layer: Number of neurons = 1 ( at input ) and 16 ( at output), weight dimension = ( 1 x 16 )
+
+Max-unpooling layer: Global unpooling, i.e. each output of the fully connected layer is used to map back to a matrix of same size as the output of convlutional layer.
+
+Deconvolutional layer: Number of kernels = 16, kernel size = ( 36 x 4 ), padding = 'VALID'
+
+# Output network
+
+Max-pooling layer: Local max-pooling, window size = ( 1 x 4), stride = ( 1 x 4)
+
+Sigmoid layer: Number of neurons = same as the length of input sequence
+
+
+
+
+
+
+
+
+
+
+
+
