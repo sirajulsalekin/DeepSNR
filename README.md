@@ -9,5 +9,7 @@ Transcription factor (TF) binds to the promoter region of a gene to control gene
 
 --------------------------------------------------------------------------------------------
 
-After cloning or downloading the repository, you need to run the "DeepSNR_main.py" script to get the prediction of CTCF transcription factor. For other TFs, the model definition need to revised according to the information provided in the "DeepSNR model_ .txt" file of the corresponding TF directory.
+After cloning or downloading the repository, you need to run the "DeepSNR_main.py" script to get the prediction of CTCF transcription factor.
+
+For other TFs, the model definition need to revised according to the information provided in the "DeepSNR model_ .txt" file of the corresponding TF directory.
 
